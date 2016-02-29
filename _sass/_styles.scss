@@ -1,7 +1,17 @@
-div.crazybig {
-	background-color: #aa0000;
+div.crazy {
+	background-color: #334477;
 	border-radius: 8px;
 	color: #e1e1e1;
-	font-size: 8em;
+	div.title {
+		line-height: 1.2em;
+		font-family: "Denk One", "sans-serif";
+		font-size: 8em;
+		padding: 12px;
+		text-align: center;
+	}
+}
+
+div.subtext {
+	padding: 1em;
 	text-align: center;
 }
