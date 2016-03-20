@@ -1,15 +1,11 @@
 ---
-layout: minimal
+layout: default
+title: Posts
 ---
-
-<div class="home">
-
-	<div class="crazy">
-		<div class="title">The<br/>Songwriting<br/>Experiment</div>
-		<div class="subtext">
-			<p>An experiment in writing pop music.</p>
-		</div>
-	</div>
-	<div class="subtext"><a href="/posts/">blog posts</a></div>
-
-</div>
+<ul class="posts">
+	{% for post in site.posts %}
+	<li class="post">
+		{% include post.html post=post more="YES" %}
+	</li>
+	{% endfor %}
+</ul>

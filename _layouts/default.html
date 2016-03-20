@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+    {% include head.html %}
+<body>
+	<div class="outer-wrapper">
+		<header class="site">
+			<h1 class="title"><a href="{{ site.baseurl }}/">{{ site.title }} | {{ site.brand }}</a></h1>
+			<p><a href="/about/">{{ site.subtitle }}</a></p>
+		</header>
+		<div class="page-content">
+			{{ content }}
+		</div>
+		{% include footer.html %}
+	</div>
+</body>
 </html>

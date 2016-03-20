@@ -1,130 +1,137 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-/**
- * Basic styling
- */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-}
-
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+	margin-bottom: $spacing-unit / 2;
 }
 
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
+body {
+	background-color: #e1e1e1;
+	color: $text-color;
+	font-family: $font-family-text;
+	font-size: 14pt;
+	margin: auto;
+	@media (max-width: $device-max-width) {
+		background-color: #666;
+	}
 }
 
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Headings
- */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+	color: $text-color-dark;
+	font-family: $font-family-header;
+	font-weight: normal;
 }
 
+h1 {
+	font-size: 1.7em;
+}
 
+h2 {
+	border-bottom: 1pt solid #666;
+	padding: 8pt 0;
+}
 
-/**
- * Links
- */
 a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+	color: $text-color-dark;
+	text-decoration: none;
 }
 
+a:active, a:hover {
+	color: lighten($text-color, 10%);
+};
 
-
-/**
- * Blockquotes
- */
+p,
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
+	line-height: 1.5em;	
+	a {
+		color: $accent-color;
+		padding: 4px;
+	}
+	a:active,
+	a:hover {
+		background-color: lighten($accent-color, 60%);
+		border-radius: 4px;
+		color: $accent-color;
+	};
 }
 
+/* custom */
 
+div.outer-wrapper {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-bottom: 5px solid #888;
+	border-radius: 6px;
+	margin: 2em 3em;
+	padding: 1em 4em;
+	@media (max-width: $device-max-width) {
+		margin: .5em;
+		padding: 1em 1em;
+	}
+}
 
-/**
- * Code formatting
- */
+header.site {
+	padding: 1em 0 3em 0;
+	text-align: center;
+	h1.title {
+		font-size: 3em;
+		@media (max-width: $device-max-width) {
+			font-size: 2em;
+		}
+		margin-bottom: 4px;
+		text-align: center;
+	}
+}
+
+p.page-footer {
+	border-top: 1px solid $text-color-dark;	
+	padding: 1em 0 0 0;
+}
+
+/* posts */
+
+ul.posts {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li.post {
+	margin: 0 0 3em 0;
+	padding: 0;
+}
+
+div.post {
+	margin: 0em 0 0em 0;
+	blockquote.pitch {
+		border-left: 4px solid #e1e1e1;
+		padding: 0 1em;
+		@media (max-width: $device-max-width) {
+			margin: 1em 0;
+			padding: 0 .5em;
+		}
+	}
+	p.meta {
+		color: lighten($theme-color, 55%);
+		font-size: .8em;
+		margin: 0;
+		padding: 0;
+		span.author {
+			font-style: oblique;
+		}
+	}
+	h1.title {
+		margin: .1em 0 .2em 0;
+	}
+}
+
+p.feedback {
+	margin: 0;
+	padding: 0;
+}
+
+/* code */
+
 pre,
 code {
     font-size: 15px;
@@ -145,60 +152,5 @@ pre {
         border: 0;
         padding-right: 0;
         padding-left: 0;
-    }
-}
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
     }
 }

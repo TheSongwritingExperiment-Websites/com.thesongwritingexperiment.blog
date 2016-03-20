@@ -1,10 +1,9 @@
 ---
 layout: post
 title: The Routine
+author: LB
+pitch: Sometime in the 80s and 90s I began playing <a href="http://www.vintagesynth.com/roland/jx3p.php">keyboard</a> in an R&B band and spent my free time writing songs. After college, I found it hard to make any sort of living on songwriting so at some point; I changed focus and went back to school. And while I became a computer programmer and eventually started a family - I never lost my underlying passion and zeal and for wanting to be a pop music songwriter/producer.
 ---
-
-Sometime in the 80s and 90s I played [keyboard](http://www.vintagesynth.com/roland/jx3p.php) in an R&B band and spent my free time writing songs. After college, I found it hard to make any sort of living on songwriting so at some point; I changed focus and went back to school. And while I became a computer programmer and eventually started a family - I never lost my underlying passion and zeal and for wanting to be known as a pop music songwriter/producer.
-
 Roughly 5 years ago, we moved and I came across all my old music equipment - tucked away in the basement. I immediately felt a surge of excitement as a few memories flashed in front of me and I quickly decided it might be fun to finish try and pick up where I'd left off.
 
 For the past 5 years then, I've spent some of my free time analyzing where I went wrong. While somewhat naive, I've taken a few [online classes at Berklee](https://online.berklee.edu/courses/music-production-analysis) and have been listening _differently_ in the car on my way into work. I maintain a full time job and have a family so I have to find creative ways to work toward this but turns out, there's something interesting about working slowly and with so many gaps between time at the keyboard.

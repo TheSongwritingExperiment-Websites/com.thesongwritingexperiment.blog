@@ -1,5 +1,6 @@
 # Site settings
-title: Blog / The  Songwriting Experiment
+title: Blog
+brand: The Songwriting Experiment
 description: > # this means to ignore newlines until "baseurl:"
   An experiment in writing pop music.
 baseurl: "" # the subpath of your site, e.g. /blog/
