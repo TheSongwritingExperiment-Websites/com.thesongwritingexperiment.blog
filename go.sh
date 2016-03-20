@@ -1,1 +1,1 @@
-rm -rf _site && jekyll s --port=7777
+rm -rf _site && jekyll s --port 7777 --drafts

@@ -88,6 +88,11 @@ p.page-footer {
 	padding: 1em 0 0 0;
 }
 
+span.strikeout {
+	color: #888;
+	text-decoration: line-through;
+}
+
 /* posts */
 
 ul.posts {
@@ -125,8 +130,8 @@ div.post {
 	}
 }
 
-p.feedback {
-	margin: 0;
+p.action {
+	margin: 0 0 2em 0;
 	padding: 0;
 }
 
